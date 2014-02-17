@@ -40,7 +40,7 @@ include_recipe "mysql::ruby"
 # TODO support 'recipe[mysql::server_ec2]'
 include_recipe "mysql::server"
 
-service "mysqld" do
+service "mysql" do
   supports :status => true, :restart => true
   action [ :enable, :start ]
 end
